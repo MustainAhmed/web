@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestWebsite</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f0708980bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="navigation">
+        <div class="logo">
+            <img src="./img/mlogo1.jpeg" alt="">
+        </div>
+        
+        <ul>
+            <li ><a href="#">Home</a></li>
+            <li ><a href="#about">About</a></li>
+            <li ><a href="#services">Services</a></li>
+            <li ><a href="#portfolio">Portfolio</a></li>
+            <li ><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </div>
+
+    <div id="home">
+        <div class="ghostimg">
+            <!-- <img src="./img/Ghost.jpeg" alt=""> -->
+        </div>
+        <div class="ghosttext">
+            <p>Hello.This is a test website.Therefore information and image found here are made up.</p>
+            <!-- <p>Image on the right is a popular video game character named "Simon <span style="color: rgb(89, 255, 47);">Ghost</span> Riley"
+                from game <span style="color: rgb(89, 255, 47);">Call of Duty Modern Warfare</span> used as place holder.</p> -->
+        </div>
+    </div>
+
+    <div id="about" >
+        <div class="container">
+            <h2 class="sub-title">About</h2>
+            <div class="left">
+                <img src="./img/GhostSymbol.jpeg" alt="">
+            </div>
+            <div class="abouttext">
+                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi placeat, sunt fugiat porro facilis id. Esse perferendis quaerat consequuntur? Accusantium voluptas aspernatur esse doloremque velit iste fugiat culpa blanditiis corporis rem eum consequatur temporibus autem facere sunt, vero aperiam harum qui ipsum, corrupti quo beatae. Ipsum magnam temporibus necessitatibus illo?
+                <div class="tab-title">
+                    <p class="tab-link active-link" onclick="opentab('Skill')">
+                        Skill
+                    </p>
+                    <p class="tab-link" onclick="opentab('Experience')">
+                        Experience
+                    </p>
+                    <p class="tab-link" onclick="opentab('Education')">
+                        Education
+                    </p>
+                </div>
+                <div class="tab-content active-tab" id="Skill">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS app</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="Experience">
+                    <ul>
+                        <li><span>2020-2023</span><br>UI/UX Training Institute</li>
+                        <li><span>2018-2020</span><br>Web App Development Training Institute</li>
+                        <li><span>2016-2018</span><br>Internship at Android/iOS app</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="Education">
+                    <ul>
+                        <li><span>2024</span><br>UI/UX Training Institute</li>
+                        <li><span>2020</span><br>MSc from BIT</li>
+                        <li><span>2018</span><br>BSc from BIT</li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title" style="width: 20%;height: 100%;">
+                My Services
+            </h2>
+            <div class="services-list">
+                
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Design</h3>
+                    <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae vel beatae provident tempore a alias.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h3>Web Design</h3>
+                    <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae vel beatae provident tempore a alias.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h3>Web Design</h3>
+                    <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae vel beatae provident tempore a alias.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">
+                My Work
+            </h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./img/work1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>UI/UX Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, consequuntur.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/work2.jpeg" alt="">
+                    <div class="layer">
+                        <h3>App Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, consequuntur.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/work3.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Web Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, consequuntur.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- contact -->
+
+    <div id="contact" style="margin-top :50px ;">
+        <div class="container">
+            <div class="contact-left">
+                <h2 class="sub-title">
+                    Contact Me
+                </h2>
+                <p> <i class="fa-regular fa-paper-plane"></i> contact@example.com</p>
+                <p> <i class="fa-solid fa-phone"></i> 012345678911</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="./randomFile" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn" style="cursor: pointer;">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    
+<script src="script.js"></script>
+</body>
+</html>

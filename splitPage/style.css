@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+h1{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3rem;
+    white-space: nowrap;
+}
+
+.button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    bottom: 45%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: white;
+    border: white solid .2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 10rem;
+    padding: 0.2rem;
+}
+
+.split.left .button:hover{
+    background-color : rgb(50, 99, 199);
+    border-color: rgb(50, 99, 199);
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: rgb(101, 100, 100);
+}
+
+.split{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.split.left{
+    left: 0;
+    background: url('psV.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.split.left::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(50, 99, 199);
+    opacity: 0.7;
+}
+
+.split.right{
+    right: 0;
+    background: url('xbox10.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.split.right::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(122, 121, 121);
+    opacity: 0.5;
+}
+
+
+
+.split.right .button:hover{
+    background-color: rgb(18, 157, 18);
+    border-color:rgb(18, 157, 18) ;
+}
+
+.hover-left .left{
+    width: 75%;
+}
+.hover-left .right{
+    width: 25%;
+}
+
+.hover-right .left{
+    width: 25%;
+}
+.hover-right .right{
+    width: 75%;
+}
+
+.split.left,.split.right,.split.left::before,.split.right::before {
+    transition: width 1s ease-in-out;
+}
